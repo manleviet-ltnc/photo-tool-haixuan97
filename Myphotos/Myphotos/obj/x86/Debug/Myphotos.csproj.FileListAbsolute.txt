@@ -1,0 +1,7 @@
+D:\github\photo-tool-haixuan97\Myphotos\Myphotos\bin\Debug\Myphotos.exe
+D:\github\photo-tool-haixuan97\Myphotos\Myphotos\bin\Debug\Myphotos.pdb
+D:\github\photo-tool-haixuan97\Myphotos\Myphotos\obj\x86\Debug\Myphotos.Properties.Resources.resources
+D:\github\photo-tool-haixuan97\Myphotos\Myphotos\obj\x86\Debug\Myphotos.csproj.GenerateResource.Cache
+D:\github\photo-tool-haixuan97\Myphotos\Myphotos\obj\x86\Debug\Myphotos.exe
+D:\github\photo-tool-haixuan97\Myphotos\Myphotos\obj\x86\Debug\Myphotos.pdb
+D:\github\photo-tool-haixuan97\Myphotos\Myphotos\obj\x86\Debug\Myphotos.Form1.resources
