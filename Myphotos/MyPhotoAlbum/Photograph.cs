@@ -2,24 +2,21 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Drawing;
-
-namespace Maning.MyPhotoAlbum
+using System.Threading.Tasks;
+namespace Manning.MyPhotoAlbum
 {
     /// <summary>
-    /// The photograph class represents a photographic
+    /// the photograph class represents a photographic
     /// image stored in the file system
     /// </summary>
-    class Photograph : IDisposable
+    public class Photograph : IDisposable
     {
         private string _fileName;
-
-        public string FileName
+        public string Filename
         {
             get { return this._fileName; }
         }
-
         private Bitmap _bitmap;
         public Bitmap Image
         {
@@ -28,14 +25,13 @@ namespace Maning.MyPhotoAlbum
                 if (_bitmap == null)
                     _bitmap = new Bitmap(_fileName);
                 return _bitmap;
-            }
+            }          
         }
-
         private string _caption = "";
         public string Caption
         {
             get { return _caption; }
-            set
+            set 
             {
                 if (_caption != value)
                 {
@@ -44,27 +40,24 @@ namespace Maning.MyPhotoAlbum
                 }
             }
         }
-
         private string _photographer = "";
         public string Photographer
         {
             get { return _photographer; }
-            set
+            set 
             {
-                if (_photographer != value)
+                if ( _photographer!= value )
                 {
-                    _photographer = value;
-                    HasChanged = true;
+                    _photographer=value ;
+                    HasChanged=true;
                 }
             }
-
         }
-
         private DateTime _dateTaken = DateTime.Now;
         public DateTime DateTaken
         {
             get { return _dateTaken; }
-            set
+            set 
             {
                 if (_dateTaken != value)
                 {
@@ -73,9 +66,8 @@ namespace Maning.MyPhotoAlbum
                 }
             }
         }
-
         private string _notes = "";
-        public string Notes
+        public string Note
         {
             get { return _notes; }
             set
@@ -87,14 +79,12 @@ namespace Maning.MyPhotoAlbum
                 }
             }
         }
-
         private bool _hasChanged = true;
         public bool HasChanged
         {
-            get { return _hasChanged; }
-            set { _hasChanged = value; }
+        get { return _hasChanged ;}
+        set { _hasChanged = value; }
         }
-
         public Photograph(string fileName)
         {
             _fileName = fileName;
@@ -106,19 +96,17 @@ namespace Maning.MyPhotoAlbum
             if (obj is Photograph)
             {
                 Photograph p = (Photograph)obj;
-                return string.Equals(FileName, p.FileName, StringComparison.InvariantCultureIgnoreCase);
-
+                return string.Equals(Filename, p.Filename, StringComparison.InvariantCultureIgnoreCase);
             }
             return false;
-
         }
         public override int GetHashCode()
         {
-            return FileName.ToLowerInvariant().GetHashCode();
+            return Filename.ToLowerInvariant().GetHashCode();
         }
         public override string ToString()
         {
-            return FileName;
+            return Filename;
         }
         public void ReleaseImage()
         {

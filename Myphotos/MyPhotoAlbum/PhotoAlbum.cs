@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace Maning.MyPhotoAlbum
+namespace Manning.MyPhotoAlbum
 {
-    class PhotoAlbum : Collection<Photograph>, IDisposable
+    public class PhotoAlbum : Collection<Photograph>, IDisposable
     {
         private bool _hasChanged = false;
         public bool HasChanged
@@ -17,19 +16,16 @@ namespace Maning.MyPhotoAlbum
                 if (_hasChanged) return true;
                 foreach (Photograph p in this)
                     if (p.HasChanged) return true;
-
                 return false;
-
             }
             set
             {
                 _hasChanged = value;
-                if (value == false)
-                    foreach (Photograph p in this)
-                        p.HasChanged = false;
+                if (value==false )
+                    foreach (Photograph p in this )
+                        p.HasChanged=false;
             }
         }
-
         public Photograph Add(string filename)
         {
             Photograph p = new Photograph(filename);
@@ -45,25 +41,21 @@ namespace Maning.MyPhotoAlbum
                 HasChanged = true;
             }
         }
-
         protected override void InsertItem(int index, Photograph item)
         {
             base.InsertItem(index, item);
             HasChanged = true;
         }
-
         protected override void RemoveItem(int index)
         {
             Items[index].Dispose();
             base.RemoveItem(index);
             HasChanged = true;
         }
-
         protected override void SetItem(int index, Photograph item)
         {
             base.SetItem(index, item);
             HasChanged = true;
-
         }
         public void Dispose()
         {

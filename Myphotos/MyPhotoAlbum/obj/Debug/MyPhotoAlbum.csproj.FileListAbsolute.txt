@@ -1,0 +1,11 @@
+C:\Users\pc\Documents\GitHub\photo-tool-htlna\MyPhotos\MyPhotoAlbum\bin\Debug\MyPhotoAlbum.dll
+C:\Users\pc\Documents\GitHub\photo-tool-htlna\MyPhotos\MyPhotoAlbum\bin\Debug\MyPhotoAlbum.pdb
+C:\Users\pc\Documents\GitHub\photo-tool-htlna\MyPhotos\MyPhotoAlbum\obj\Debug\MyPhotoAlbum.csprojResolveAssemblyReference.cache
+C:\Users\pc\Documents\GitHub\photo-tool-htlna\MyPhotos\MyPhotoAlbum\obj\Debug\MyPhotoAlbum.dll
+C:\Users\pc\Documents\GitHub\photo-tool-htlna\MyPhotos\MyPhotoAlbum\obj\Debug\MyPhotoAlbum.pdb
+E:\github\photo-tool-haixuan97\Myphotos\MyPhotoAlbum\bin\Debug\MyPhotoAlbum.dll
+E:\github\photo-tool-haixuan97\Myphotos\MyPhotoAlbum\bin\Debug\MyPhotoAlbum.pdb
+E:\github\photo-tool-haixuan97\Myphotos\MyPhotoAlbum\obj\Debug\MyPhotoAlbum.csprojResolveAssemblyReference.cache
+E:\github\photo-tool-haixuan97\Myphotos\MyPhotoAlbum\obj\Debug\MyPhotoAlbum.csproj.CoreCompileInputs.cache
+E:\github\photo-tool-haixuan97\Myphotos\MyPhotoAlbum\obj\Debug\MyPhotoAlbum.dll
+E:\github\photo-tool-haixuan97\Myphotos\MyPhotoAlbum\obj\Debug\MyPhotoAlbum.pdb
