@@ -33,10 +33,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtPhotoFile = new System.Windows.Forms.TextBox();
+            this.txtCaption = new System.Windows.Forms.TextBox();
+            this.txtPhotographer = new System.Windows.Forms.TextBox();
+            this.mskDaTaken = new System.Windows.Forms.MaskedTextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtNotes = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.tblpanel.SuspendLayout();
             this.SuspendLayout();
@@ -54,10 +56,10 @@
             this.tblpanel.Controls.Add(this.label2, 0, 1);
             this.tblpanel.Controls.Add(this.label3, 0, 2);
             this.tblpanel.Controls.Add(this.label4, 0, 3);
-            this.tblpanel.Controls.Add(this.textBox1, 1, 0);
-            this.tblpanel.Controls.Add(this.textBox2, 1, 1);
-            this.tblpanel.Controls.Add(this.textBox3, 1, 2);
-            this.tblpanel.Controls.Add(this.textBox4, 1, 3);
+            this.tblpanel.Controls.Add(this.txtPhotoFile, 1, 0);
+            this.tblpanel.Controls.Add(this.txtCaption, 1, 1);
+            this.tblpanel.Controls.Add(this.txtPhotographer, 1, 3);
+            this.tblpanel.Controls.Add(this.mskDaTaken, 1, 2);
             this.tblpanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblpanel.Location = new System.Drawing.Point(0, 0);
             this.tblpanel.Name = "tblpanel";
@@ -87,7 +89,7 @@
             this.label2.Location = new System.Drawing.Point(3, 24);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 24);
-            this.label2.TabIndex = 1;
+            this.label2.TabIndex = 2;
             this.label2.Text = "Cap&tion:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -98,7 +100,7 @@
             this.label3.Location = new System.Drawing.Point(3, 48);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 24);
-            this.label3.TabIndex = 2;
+            this.label3.TabIndex = 4;
             this.label3.Text = "&Date Taken";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -109,48 +111,77 @@
             this.label4.Location = new System.Drawing.Point(3, 72);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(83, 26);
-            this.label4.TabIndex = 3;
+            this.label4.TabIndex = 6;
             this.label4.Text = "&Photographer:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox1
+            // txtPhotoFile
             // 
-            this.textBox1.Location = new System.Drawing.Point(92, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 4;
+            this.txtPhotoFile.Location = new System.Drawing.Point(92, 3);
+            this.txtPhotoFile.Name = "txtPhotoFile";
+            this.txtPhotoFile.ReadOnly = true;
+            this.txtPhotoFile.Size = new System.Drawing.Size(162, 20);
+            this.txtPhotoFile.TabIndex = 1;
             // 
-            // textBox2
+            // txtCaption
             // 
-            this.textBox2.Location = new System.Drawing.Point(92, 27);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 5;
+            this.txtCaption.Location = new System.Drawing.Point(92, 27);
+            this.txtCaption.Name = "txtCaption";
+            this.txtCaption.Size = new System.Drawing.Size(162, 20);
+            this.txtCaption.TabIndex = 3;
+            this.txtCaption.TextChanged += new System.EventHandler(this.txtCaption_TextChanged);
             // 
-            // textBox3
+            // txtPhotographer
             // 
-            this.textBox3.Location = new System.Drawing.Point(92, 51);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 6;
+            this.txtPhotographer.Location = new System.Drawing.Point(92, 75);
+            this.txtPhotographer.Name = "txtPhotographer";
+            this.txtPhotographer.Size = new System.Drawing.Size(162, 20);
+            this.txtPhotographer.TabIndex = 7;
             // 
-            // textBox4
+            // mskDaTaken
             // 
-            this.textBox4.Location = new System.Drawing.Point(92, 75);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 7;
+            this.mskDaTaken.Location = new System.Drawing.Point(92, 51);
+            this.mskDaTaken.Mask = "00/00/0000";
+            this.mskDaTaken.Name = "mskDaTaken";
+            this.mskDaTaken.Size = new System.Drawing.Size(162, 20);
+            this.mskDaTaken.TabIndex = 5;
+            this.mskDaTaken.TypeValidationCompleted += new System.Windows.Forms.TypeValidationEventHandler(this.mskDaTaken_TypeValidationCompleted);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(17, 116);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(38, 13);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "&Notes:";
+            // 
+            // txtNotes
+            // 
+            this.txtNotes.AcceptsReturn = true;
+            this.txtNotes.Location = new System.Drawing.Point(20, 132);
+            this.txtNotes.Multiline = true;
+            this.txtNotes.Name = "txtNotes";
+            this.txtNotes.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtNotes.Size = new System.Drawing.Size(251, 88);
+            this.txtNotes.TabIndex = 4;
             // 
             // PhotoEditDialog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.txtNotes);
+            this.Controls.Add(this.label5);
             this.Name = "PhotoEditDialog";
             this.Text = "Photo Properties";
+            this.Controls.SetChildIndex(this.panel1, 0);
+            this.Controls.SetChildIndex(this.label5, 0);
+            this.Controls.SetChildIndex(this.txtNotes, 0);
             this.panel1.ResumeLayout(false);
             this.tblpanel.ResumeLayout(false);
             this.tblpanel.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -161,9 +192,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtPhotoFile;
+        private System.Windows.Forms.TextBox txtCaption;
+        private System.Windows.Forms.TextBox txtPhotographer;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtNotes;
+        private System.Windows.Forms.MaskedTextBox mskDaTaken;
     }
 }

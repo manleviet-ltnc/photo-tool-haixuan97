@@ -38,7 +38,7 @@
             this.mnuImageActual = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.mnuNext = new System.Windows.Forms.ToolStripMenuItem();
-            this.previousToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuPrevious = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuView = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mnuFile = new System.Windows.Forms.ToolStripMenuItem();
@@ -68,6 +68,7 @@
             this.sttImageSize = new System.Windows.Forms.ToolStripStatusLabel();
             this.sttAlbumPos = new System.Windows.Forms.ToolStripStatusLabel();
             this.mnuPixelData = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuPhotoProps = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPhoto)).BeginInit();
             this.ctxMenuPhoto.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -93,10 +94,11 @@
             this.mnuImage,
             this.toolStripSeparator1,
             this.mnuNext,
-            this.previousToolStripMenuItem,
-            this.mnuPixelData});
+            this.mnuPrevious,
+            this.mnuPixelData,
+            this.mnuPhotoProps});
             this.ctxMenuPhoto.Name = "ctxMenuPhoto";
-            this.ctxMenuPhoto.Size = new System.Drawing.Size(218, 98);
+            this.ctxMenuPhoto.Size = new System.Drawing.Size(218, 142);
             this.ctxMenuPhoto.Opening += new System.ComponentModel.CancelEventHandler(this.ctxMenuPhoto_Opening);
             // 
             // mnuImage
@@ -148,14 +150,14 @@
             this.mnuNext.Text = "Next";
             this.mnuNext.Click += new System.EventHandler(this.mnuNext_Click);
             // 
-            // previousToolStripMenuItem
+            // mnuPrevious
             // 
-            this.previousToolStripMenuItem.Name = "previousToolStripMenuItem";
-            this.previousToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            this.mnuPrevious.Name = "mnuPrevious";
+            this.mnuPrevious.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.P)));
-            this.previousToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
-            this.previousToolStripMenuItem.Text = "mnuPrevious";
-            this.previousToolStripMenuItem.Click += new System.EventHandler(this.previousToolStripMenuItem_Click);
+            this.mnuPrevious.Size = new System.Drawing.Size(217, 22);
+            this.mnuPrevious.Text = "mnuPrevious";
+            this.mnuPrevious.Click += new System.EventHandler(this.previousToolStripMenuItem_Click);
             // 
             // mnuView
             // 
@@ -407,6 +409,13 @@
             this.mnuPixelData.Text = "Pi&xel Data...";
             this.mnuPixelData.Click += new System.EventHandler(this.mnuPixelData_Click);
             // 
+            // mnuPhotoProps
+            // 
+            this.mnuPhotoProps.Name = "mnuPhotoProps";
+            this.mnuPhotoProps.Size = new System.Drawing.Size(217, 22);
+            this.mnuPhotoProps.Text = "Phot&o Properties...";
+            this.mnuPhotoProps.Click += new System.EventHandler(this.mnuPhotoProps_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -465,10 +474,11 @@
         private System.Windows.Forms.ToolStripMenuItem mnuHelpAbout;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem mnuNext;
-        private System.Windows.Forms.ToolStripMenuItem previousToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnuPrevious;
         private System.Windows.Forms.ToolStripMenuItem mnuEditAdd;
         private System.Windows.Forms.ToolStripMenuItem mnuEditRemove;
         private System.Windows.Forms.ToolStripMenuItem mnuPixelData;
+        private System.Windows.Forms.ToolStripMenuItem mnuPhotoProps;
     }
 }
 
