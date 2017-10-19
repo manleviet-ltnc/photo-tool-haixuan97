@@ -16,3 +16,14 @@ E:\github\photo-tool-haixuan97\Myphotos\Myphotos\obj\x86\Debug\Myphotos.pdb
 E:\github\photo-tool-haixuan97\Myphotos\Myphotos\obj\x86\Debug\Myphotos.MainForm.resources
 E:\github\photo-tool-haixuan97\Myphotos\Myphotos\bin\Debug\MyPhotoAlbum.dll
 E:\github\photo-tool-haixuan97\Myphotos\Myphotos\bin\Debug\MyPhotoAlbum.pdb
+D:\github\photo-tool-haixuan97\photo-tool-haixuan97\Myphotos\Myphotos\bin\Debug\Myphotos.exe
+D:\github\photo-tool-haixuan97\photo-tool-haixuan97\Myphotos\Myphotos\bin\Debug\Myphotos.pdb
+D:\github\photo-tool-haixuan97\photo-tool-haixuan97\Myphotos\Myphotos\bin\Debug\MyPhotoAlbum.dll
+D:\github\photo-tool-haixuan97\photo-tool-haixuan97\Myphotos\Myphotos\bin\Debug\MyPhotoAlbum.pdb
+D:\github\photo-tool-haixuan97\photo-tool-haixuan97\Myphotos\Myphotos\obj\x86\Debug\Myphotos.csprojResolveAssemblyReference.cache
+D:\github\photo-tool-haixuan97\photo-tool-haixuan97\Myphotos\Myphotos\obj\x86\Debug\Myphotos.MainForm.resources
+D:\github\photo-tool-haixuan97\photo-tool-haixuan97\Myphotos\Myphotos\obj\x86\Debug\Myphotos.Properties.Resources.resources
+D:\github\photo-tool-haixuan97\photo-tool-haixuan97\Myphotos\Myphotos\obj\x86\Debug\Myphotos.csproj.GenerateResource.Cache
+D:\github\photo-tool-haixuan97\photo-tool-haixuan97\Myphotos\Myphotos\obj\x86\Debug\Myphotos.csproj.CoreCompileInputs.cache
+D:\github\photo-tool-haixuan97\photo-tool-haixuan97\Myphotos\Myphotos\obj\x86\Debug\Myphotos.exe
+D:\github\photo-tool-haixuan97\photo-tool-haixuan97\Myphotos\Myphotos\obj\x86\Debug\Myphotos.pdb
