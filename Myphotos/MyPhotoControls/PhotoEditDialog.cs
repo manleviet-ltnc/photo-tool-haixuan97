@@ -97,6 +97,7 @@ namespace Manning.MyPhotoControls
         {
             public static DateTime Parse(string input)
             {
+
                 DateTime result = DateTime.Parse(input);
                 if (result > DateTime.Now)
                     throw new FormatException("The given date is in the future.");

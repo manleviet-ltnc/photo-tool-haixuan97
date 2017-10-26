@@ -404,5 +404,10 @@ namespace Myphotos
                     DisplayAlbum();
             }
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
