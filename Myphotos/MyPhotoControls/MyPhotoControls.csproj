@@ -41,20 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AlbumEditDaiLog.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AlbumEditDaiLog.Designer.cs">
-      <DependentUpon>AlbumEditDaiLog.cs</DependentUpon>
-    </Compile>
     <Compile Include="BaseEditDialog.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BaseEditDialog.Designer.cs">
       <DependentUpon>BaseEditDialog.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Flybytextprovider.cs">
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="PhotoEditDialog.cs">
       <SubType>Form</SubType>
@@ -78,9 +69,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AlbumEditDaiLog.resx">
-      <DependentUpon>AlbumEditDaiLog.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="BaseEditDialog.resx">
       <DependentUpon>BaseEditDialog.cs</DependentUpon>
     </EmbeddedResource>
