@@ -69,6 +69,10 @@
             this.sttInfo = new System.Windows.Forms.ToolStripStatusLabel();
             this.sttImageSize = new System.Windows.Forms.ToolStripStatusLabel();
             this.sttAlbumPos = new System.Windows.Forms.ToolStripStatusLabel();
+<<<<<<< HEAD
+=======
+            this.mnuAlbumProps = new System.Windows.Forms.ToolStripMenuItem();
+>>>>>>> 49724cbe5dc49365b823a4e064618e5c39618ea9
             ((System.ComponentModel.ISupportInitialize)(this.pbxPhoto)).BeginInit();
             this.ctxMenuPhoto.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -96,7 +100,8 @@
             this.mnuNext,
             this.mnuPrevious,
             this.mnuPixelData,
-            this.mnuPhotoProps});
+            this.mnuPhotoProps,
+            this.mnuAlbumProps});
             this.ctxMenuPhoto.Name = "ctxMenuPhoto";
             this.ctxMenuPhoto.OwnerItem = this.mnuView;
             this.ctxMenuPhoto.Size = new System.Drawing.Size(218, 120);
@@ -417,6 +422,16 @@
             this.sttAlbumPos.Size = new System.Drawing.Size(34, 19);
             this.sttAlbumPos.Text = "1 / 1";
             // 
+<<<<<<< HEAD
+=======
+            // mnuAlbumProps
+            // 
+            this.mnuAlbumProps.Name = "mnuAlbumProps";
+            this.mnuAlbumProps.Size = new System.Drawing.Size(217, 22);
+            this.mnuAlbumProps.Text = "Album Properties...";
+            this.mnuAlbumProps.Click += new System.EventHandler(this.mnuAlbumProps_Click);
+            // 
+>>>>>>> 49724cbe5dc49365b823a4e064618e5c39618ea9
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -425,6 +440,7 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.pbxPhoto);
             this.Controls.Add(this.menuStrip1);
+            this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.Text = "MyPhotos";
@@ -481,6 +497,7 @@
         private System.Windows.Forms.ToolStripMenuItem mnuEditRemove;
         private System.Windows.Forms.ToolStripMenuItem mnuPixelData;
         private System.Windows.Forms.ToolStripMenuItem mnuPhotoProps;
+        private System.Windows.Forms.ToolStripMenuItem mnuAlbumProps;
     }
 }
 

@@ -89,6 +89,7 @@
             this.Name = "BaseEditDialog";
             this.ShowInTaskbar = false;
             this.Text = "BaseEditDialog";
+     
             this.ResumeLayout(false);
 
         }

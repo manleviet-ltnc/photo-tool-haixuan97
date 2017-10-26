@@ -10,3 +10,17 @@ D:\github\photo-tool-haixuan97\photo-tool-haixuan97\Myphotos\MyPhotoControls\obj
 D:\github\photo-tool-haixuan97\photo-tool-haixuan97\Myphotos\MyPhotoControls\obj\Debug\MyPhotoControls.pdb
 D:\github\photo-tool-haixuan97\photo-tool-haixuan97\Myphotos\MyPhotoControls\obj\Debug\Manning.MyPhotoControls.BaseEditDialog.resources
 D:\github\photo-tool-haixuan97\photo-tool-haixuan97\Myphotos\MyPhotoControls\obj\Debug\Manning.MyPhotoControls.PhotoEditDialog.resources
+C:\Users\USER\Documents\GitHub\photo-tool-haixuan97\photo-tool-haixuan97\Myphotos\MyPhotoControls\bin\Debug\MyPhotoControls.dll
+C:\Users\USER\Documents\GitHub\photo-tool-haixuan97\photo-tool-haixuan97\Myphotos\MyPhotoControls\bin\Debug\MyPhotoControls.pdb
+C:\Users\USER\Documents\GitHub\photo-tool-haixuan97\photo-tool-haixuan97\Myphotos\MyPhotoControls\bin\Debug\MyPhotoAlbum.dll
+C:\Users\USER\Documents\GitHub\photo-tool-haixuan97\photo-tool-haixuan97\Myphotos\MyPhotoControls\bin\Debug\MyPhotoAlbum.pdb
+C:\Users\USER\Documents\GitHub\photo-tool-haixuan97\photo-tool-haixuan97\Myphotos\MyPhotoControls\obj\Debug\MyPhotoControls.csprojResolveAssemblyReference.cache
+C:\Users\USER\Documents\GitHub\photo-tool-haixuan97\photo-tool-haixuan97\Myphotos\MyPhotoControls\obj\Debug\Manning.MyPhotoControls.BaseEditDialog.resources
+C:\Users\USER\Documents\GitHub\photo-tool-haixuan97\photo-tool-haixuan97\Myphotos\MyPhotoControls\obj\Debug\Manning.MyPhotoControls.PhotoEditDialog.resources
+C:\Users\USER\Documents\GitHub\photo-tool-haixuan97\photo-tool-haixuan97\Myphotos\MyPhotoControls\obj\Debug\Manning.MyPhotoControls.PixelDialog.resources
+C:\Users\USER\Documents\GitHub\photo-tool-haixuan97\photo-tool-haixuan97\Myphotos\MyPhotoControls\obj\Debug\MyPhotoControls.csproj.GenerateResource.Cache
+C:\Users\USER\Documents\GitHub\photo-tool-haixuan97\photo-tool-haixuan97\Myphotos\MyPhotoControls\obj\Debug\MyPhotoControls.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\GitHub\photo-tool-haixuan97\photo-tool-haixuan97\Myphotos\MyPhotoControls\obj\Debug\MyPhotoControls.dll
+C:\Users\USER\Documents\GitHub\photo-tool-haixuan97\photo-tool-haixuan97\Myphotos\MyPhotoControls\obj\Debug\MyPhotoControls.pdb
+C:\Users\USER\Documents\GitHub\photo-tool-haixuan97\photo-tool-haixuan97\Myphotos\MyPhotoControls\obj\Debug\Manning.MyPhotoControls.AlbumEditDaiLog.resources
+D:\github\photo-tool-haixuan97\photo-tool-haixuan97\Myphotos\MyPhotoControls\obj\Debug\Manning.MyPhotoControls.AlbumEditDaiLog.resources

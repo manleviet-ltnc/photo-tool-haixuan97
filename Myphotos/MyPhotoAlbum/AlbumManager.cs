@@ -16,11 +16,25 @@ namespace Manning.MyPhotoAlbum
             get { return _defaultPath; }
             set { _defaultPath = value; }
         }
-         static AlbumManager ()
+
+        private string _pwd;
+        public string Password
+        {
+            get { return _pwd; }
+            set
+            {
+                _pwd = value;
+            }
+        }
+
+
+        static AlbumManager ()
          {
              _defaultPath= Environment.GetFolderPath(Environment.SpecialFolder.Personal) + @"\Albums";
          }
          private int _pos = -1;
+
+
          public int Index
          {
              get
@@ -38,11 +52,15 @@ namespace Manning.MyPhotoAlbum
              }
          }
          private string _name = string.Empty;
+
+
          public string FullName
          {
              get { return _name; }
              private set { _name = value; }
          }
+
+
          public string ShortName
          {
              get 
@@ -54,10 +72,14 @@ namespace Manning.MyPhotoAlbum
              }
          }
          private PhotoAlbum _album;
+
+
          public PhotoAlbum Album
          {
              get { return _album; }
          }
+
+
          public AlbumManager()
          {
              _album = new PhotoAlbum();
