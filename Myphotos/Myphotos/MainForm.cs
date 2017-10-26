@@ -63,11 +63,11 @@ namespace Myphotos
             Version ver = new Version(Application.ProductVersion);
             string name = Manager.FullName;
             Text = String.Format("{2} - MyPhotos {0:0}.{1:0}",
-                                  ver.Major, ver.Minor, string.IsNullOrEmpty(name) ? "Untitled" : name) ;
+                                  ver.Major, ver.Minor, string.IsNullOrEmpty(name) ? "Untitled" : name);
 
         }
 
-       
+
 
         private void mnuFileLoad_Click(object sender, EventArgs e)
         {
@@ -139,6 +139,9 @@ namespace Myphotos
                 sttImageSize.Text = String.Format("{0:#}x{1:#}",
                                                     pbxPhoto.Image.Width,
                                                     pbxPhoto.Image.Height);
+                sttAlbumPos.Text = string.Format("{0:0}/{1:0}",
+                                               Manager.Index + 1,
+                                               Manager.Album.Count);
                 //sttAlbumPos is set in ch.6
             }
             else
@@ -167,6 +170,7 @@ namespace Myphotos
             if (dlg.ShowDialog() == DialogResult.OK)
             {
                 string path = dlg.FileName;
+
                 if (!SaveAndCloseAlbum())
                     return;
                 try
@@ -175,7 +179,7 @@ namespace Myphotos
 
 
                     //Open the new album
-                    
+
                     Manager = new AlbumManager(path);
                 }
                 catch (AlbumStorageExeption aex)
@@ -266,7 +270,7 @@ namespace Myphotos
             SetTitleBar();
             return true;
         }
-            private void mnuFileSave_Click(object sender, EventArgs e)
+        private void mnuFileSave_Click(object sender, EventArgs e)
         {
             SaveAlbum();
         }
@@ -280,7 +284,7 @@ namespace Myphotos
         {
             OpenFileDialog dlg = new OpenFileDialog();
 
-            dlg.Title = "Ađ Photos";
+            dlg.Title = "Add Photos";
             dlg.Multiselect = true;
             dlg.Filter
             = "Image Files (JPEG, GIF, BMP, etc.)|"
@@ -308,7 +312,7 @@ namespace Myphotos
                         Manager.Album.Add(photo);
                     else
                         photo.Dispose();
-                    
+
                 }
                 Manager.Index = Manager.Album.Count - 1;
             }
@@ -336,7 +340,7 @@ namespace Myphotos
 
         private void previousToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Manager.Index >0)
+            if (Manager.Index > 0)
             {
                 Manager.Index--;
                 DisplayAlbum();
@@ -348,6 +352,7 @@ namespace Myphotos
             mnuNext.Enabled = (Manager.Index < Manager.Album.Count - 1);
             mnuPrevious.Enabled = (Manager.Index > 0);
             mnuPhotoProps.Enabled = (Manager.Current != null);
+            mnuAlbumProps.Enabled = (Manager.Album != null);
         }
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
@@ -404,5 +409,72 @@ namespace Myphotos
                     DisplayAlbum();
             }
         }
+
+        private void mnuAlbumProps_Click(object sender, EventArgs e)
+        {
+            if (Manager.Album == null)
+                return;
+            using (AlbumEditDaiLog dlg = new AlbumEditDaiLog(Manager))
+            {
+                if (dlg.ShowDialog() == DialogResult.OK)
+                    DisplayAlbum();
+            }
+        }
+
+        protected override void OnKeyPress(KeyPressEventArgs e)
+        {
+
+            switch (e.KeyChar)
+            {
+                case '+':
+                    mnuNext.PerformClick();
+                    e.Handled = true;
+                    break;
+                case '-':
+                    mnuPrevious.PerformClick();
+                    e.Handled = true;
+                    break;
+                    base.OnKeyPress(e);
+            }
+        }
+
+        protected override void OnKeyDown(KeyEventArgs e)
+        {
+
+            switch (e.KeyCode)
+            {
+                case Keys.PageUp:
+                    mnuPrevious.PerformClick();
+                    e.Handled = true;
+                    break;
+                case Keys.PageDown:
+                    mnuNext.PerformClick();
+                    e.Handled = true;
+                    break;
+            }
+
+            base.OnKeyDown(e);
+        }
+        private const int WM_KEYDOWN = 0x100;
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+
+            if (msg.Msg == WM_KEYDOWN)
+            {
+                switch (keyData)
+                {
+                    case Keys.Tab:
+                        mnuNext.PerformClick();
+                        return true;
+                    case Keys.Shift | Keys.Tab:
+                        mnuPrevious.PerformClick();
+                        return true;
+                }
+            }
+            return base.ProcessCmdKey(ref msg, keyData);
+        }
+
+
+
     }
 }

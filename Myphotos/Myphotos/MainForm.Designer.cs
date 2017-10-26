@@ -39,6 +39,8 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.mnuNext = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuPrevious = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuPixelData = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuPhotoProps = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuView = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mnuFile = new System.Windows.Forms.ToolStripMenuItem();
@@ -67,8 +69,7 @@
             this.sttInfo = new System.Windows.Forms.ToolStripStatusLabel();
             this.sttImageSize = new System.Windows.Forms.ToolStripStatusLabel();
             this.sttAlbumPos = new System.Windows.Forms.ToolStripStatusLabel();
-            this.mnuPixelData = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuPhotoProps = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuAlbumProps = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPhoto)).BeginInit();
             this.ctxMenuPhoto.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -96,7 +97,8 @@
             this.mnuNext,
             this.mnuPrevious,
             this.mnuPixelData,
-            this.mnuPhotoProps});
+            this.mnuPhotoProps,
+            this.mnuAlbumProps});
             this.ctxMenuPhoto.Name = "ctxMenuPhoto";
             this.ctxMenuPhoto.Size = new System.Drawing.Size(218, 142);
             this.ctxMenuPhoto.Opening += new System.ComponentModel.CancelEventHandler(this.ctxMenuPhoto_Opening);
@@ -158,6 +160,20 @@
             this.mnuPrevious.Size = new System.Drawing.Size(217, 22);
             this.mnuPrevious.Text = "mnuPrevious";
             this.mnuPrevious.Click += new System.EventHandler(this.previousToolStripMenuItem_Click);
+            // 
+            // mnuPixelData
+            // 
+            this.mnuPixelData.Name = "mnuPixelData";
+            this.mnuPixelData.Size = new System.Drawing.Size(217, 22);
+            this.mnuPixelData.Text = "Pi&xel Data...";
+            this.mnuPixelData.Click += new System.EventHandler(this.mnuPixelData_Click);
+            // 
+            // mnuPhotoProps
+            // 
+            this.mnuPhotoProps.Name = "mnuPhotoProps";
+            this.mnuPhotoProps.Size = new System.Drawing.Size(217, 22);
+            this.mnuPhotoProps.Text = "Phot&o Properties...";
+            this.mnuPhotoProps.Click += new System.EventHandler(this.mnuPhotoProps_Click);
             // 
             // mnuView
             // 
@@ -402,19 +418,12 @@
             this.sttAlbumPos.Size = new System.Drawing.Size(34, 19);
             this.sttAlbumPos.Text = "1 / 1";
             // 
-            // mnuPixelData
+            // mnuAlbumProps
             // 
-            this.mnuPixelData.Name = "mnuPixelData";
-            this.mnuPixelData.Size = new System.Drawing.Size(217, 22);
-            this.mnuPixelData.Text = "Pi&xel Data...";
-            this.mnuPixelData.Click += new System.EventHandler(this.mnuPixelData_Click);
-            // 
-            // mnuPhotoProps
-            // 
-            this.mnuPhotoProps.Name = "mnuPhotoProps";
-            this.mnuPhotoProps.Size = new System.Drawing.Size(217, 22);
-            this.mnuPhotoProps.Text = "Phot&o Properties...";
-            this.mnuPhotoProps.Click += new System.EventHandler(this.mnuPhotoProps_Click);
+            this.mnuAlbumProps.Name = "mnuAlbumProps";
+            this.mnuAlbumProps.Size = new System.Drawing.Size(217, 22);
+            this.mnuAlbumProps.Text = "Album Properties...";
+            this.mnuAlbumProps.Click += new System.EventHandler(this.mnuAlbumProps_Click);
             // 
             // MainForm
             // 
@@ -424,6 +433,7 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.pbxPhoto);
             this.Controls.Add(this.menuStrip1);
+            this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.Text = "MyPhotos";
@@ -479,6 +489,7 @@
         private System.Windows.Forms.ToolStripMenuItem mnuEditRemove;
         private System.Windows.Forms.ToolStripMenuItem mnuPixelData;
         private System.Windows.Forms.ToolStripMenuItem mnuPhotoProps;
+        private System.Windows.Forms.ToolStripMenuItem mnuAlbumProps;
     }
 }
 
