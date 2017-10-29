@@ -22,12 +22,9 @@ namespace Manning.MyPhotoControls
             // Does nothing in base class
         }
 
-        
-
-        private void btnReset_Click_1(object sender, EventArgs e)
+        private void btnReset_Click(object sender, EventArgs e)
         {
             ResetDialog();
         }
     }
 }
-

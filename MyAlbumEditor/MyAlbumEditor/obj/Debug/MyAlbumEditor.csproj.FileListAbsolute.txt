@@ -1,0 +1,13 @@
+F:\Documents\GitHub\MyAlbumEditor\MyAlbumEditor\bin\Debug\MyAlbumEditor.exe.config
+F:\Documents\GitHub\MyAlbumEditor\MyAlbumEditor\bin\Debug\MyAlbumEditor.exe
+F:\Documents\GitHub\MyAlbumEditor\MyAlbumEditor\bin\Debug\MyAlbumEditor.pdb
+F:\Documents\GitHub\MyAlbumEditor\MyAlbumEditor\bin\Debug\MyPhotoAlbum.dll
+F:\Documents\GitHub\MyAlbumEditor\MyAlbumEditor\bin\Debug\MyPhotoControls.dll
+F:\Documents\GitHub\MyAlbumEditor\MyAlbumEditor\bin\Debug\MyPhotoAlbum.pdb
+F:\Documents\GitHub\MyAlbumEditor\MyAlbumEditor\bin\Debug\MyPhotoControls.pdb
+F:\Documents\GitHub\MyAlbumEditor\MyAlbumEditor\obj\Debug\MyAlbumEditor.csprojResolveAssemblyReference.cache
+F:\Documents\GitHub\MyAlbumEditor\MyAlbumEditor\obj\Debug\MyAlbumEditor.Properties.Resources.resources
+F:\Documents\GitHub\MyAlbumEditor\MyAlbumEditor\obj\Debug\MyAlbumEditor.csproj.GenerateResource.Cache
+F:\Documents\GitHub\MyAlbumEditor\MyAlbumEditor\obj\Debug\MyAlbumEditor.exe
+F:\Documents\GitHub\MyAlbumEditor\MyAlbumEditor\obj\Debug\MyAlbumEditor.pdb
+F:\Documents\GitHub\MyAlbumEditor\MyAlbumEditor\obj\Debug\MyAlbumEditor.EditorForm.resources

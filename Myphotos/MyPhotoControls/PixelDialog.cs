@@ -22,6 +22,7 @@ namespace Manning.MyPhotoControls
         {
             Close();
         }
+
         private void SetPixelData(int x, int y, int red, int green, int blue)
         {
             lblX.Text = x.ToString();
@@ -35,23 +36,21 @@ namespace Manning.MyPhotoControls
         {
             SetPixelData(0, 0, 0, 0, 0);
         }
-        public void UpdatePixelData(int xPos, int yPos, Bitmap bmp,
-                                    Rectangle displayRect, Rectangle bmpRect,
-                                    PictureBoxSizeMode sizeMode)
+
+        public void UpdatePixelData(int xPos, int yPos, Bitmap bmp, Rectangle displayRect, Rectangle bmpRect, PictureBoxSizeMode sizeMode)
         {
-            //Determine (x,y) position within image
+            // Determine (x, y) position within image
             int x = 0, y = 0;
 
             switch (sizeMode)
             {
                 case PictureBoxSizeMode.AutoSize:
                 case PictureBoxSizeMode.CenterImage:
-                    throw new NotSupportedException("The AutoSize and CenterImage size modes "
-                                                    + "are not supported at this time.");
+                    throw new NotSupportedException("The AutoSize and CenterImage size modes are not supported at this time.");
                 case PictureBoxSizeMode.Normal:
-                    //Rectangel coords are image coords
+                    // Rectangle coords are image coords
                     if (xPos >= bmp.Width || yPos >= bmp.Height)
-                        return; //position outsize image
+                        return; // position outside image
 
                     x = xPos - bmpRect.X;
                     y = yPos - bmpRect.Y;
@@ -73,11 +72,11 @@ namespace Manning.MyPhotoControls
                     break;
             }
 
+            // Extract color at calculated position
             Color c = bmp.GetPixel(x, y);
+
+            // Update dialog values
             SetPixelData(x, y, c.R, c.G, c.B);
-
-
         }
     }
 }
-

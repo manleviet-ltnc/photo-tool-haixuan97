@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyAlbumEditor", "MyAlbumEditor\MyAlbumEditor.csproj", "{51C31B5E-C4D1-458F-BF1C-9AB8FBDC1382}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPhotoControls", "..\..\photo-tool-manleviet-master\photo-tool-manleviet-master\MyPhotos\MyPhotoControls\MyPhotoControls.csproj", "{ABE505EF-7036-49D3-AD12-F0C44552FFD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPhotoAlbum", "..\..\photo-tool-manleviet-master\photo-tool-manleviet-master\MyPhotos\MyPhotoAlbum\MyPhotoAlbum.csproj", "{BA28F54E-5817-4900-A0D6-621702D8E6C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51C31B5E-C4D1-458F-BF1C-9AB8FBDC1382}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51C31B5E-C4D1-458F-BF1C-9AB8FBDC1382}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51C31B5E-C4D1-458F-BF1C-9AB8FBDC1382}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51C31B5E-C4D1-458F-BF1C-9AB8FBDC1382}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABE505EF-7036-49D3-AD12-F0C44552FFD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABE505EF-7036-49D3-AD12-F0C44552FFD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABE505EF-7036-49D3-AD12-F0C44552FFD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABE505EF-7036-49D3-AD12-F0C44552FFD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA28F54E-5817-4900-A0D6-621702D8E6C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA28F54E-5817-4900-A0D6-621702D8E6C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA28F54E-5817-4900-A0D6-621702D8E6C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA28F54E-5817-4900-A0D6-621702D8E6C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

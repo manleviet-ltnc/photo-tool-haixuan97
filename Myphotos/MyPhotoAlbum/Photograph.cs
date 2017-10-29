@@ -2,21 +2,23 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Drawing;
 using System.Threading.Tasks;
+using System.Drawing;
+
 namespace Manning.MyPhotoAlbum
 {
     /// <summary>
-    /// the photograph class represents a photographic
+    /// The photograph class represents a photographic
     /// image stored in the file system
     /// </summary>
-    public class Photograph : IDisposable
+    public class Photograph : IDisposable, IFormattable 
     {
         private string _fileName;
-        public string Filename
+        public string FileName
         {
             get { return this._fileName; }
         }
+
         private Bitmap _bitmap;
         public Bitmap Image
         {
@@ -25,13 +27,14 @@ namespace Manning.MyPhotoAlbum
                 if (_bitmap == null)
                     _bitmap = new Bitmap(_fileName);
                 return _bitmap;
-            }          
+            }
         }
+
         private string _caption = "";
         public string Caption
         {
             get { return _caption; }
-            set 
+            set
             {
                 if (_caption != value)
                 {
@@ -40,24 +43,26 @@ namespace Manning.MyPhotoAlbum
                 }
             }
         }
+
         private string _photographer = "";
         public string Photographer
         {
             get { return _photographer; }
-            set 
+            set
             {
-                if ( _photographer!= value )
+                if (_photographer != value)
                 {
-                    _photographer=value ;
-                    HasChanged=true;
+                    _photographer = value;
+                    HasChanged = true;
                 }
             }
         }
+
         private DateTime _dateTaken = DateTime.Now;
         public DateTime DateTaken
         {
             get { return _dateTaken; }
-            set 
+            set
             {
                 if (_dateTaken != value)
                 {
@@ -66,8 +71,9 @@ namespace Manning.MyPhotoAlbum
                 }
             }
         }
+
         private string _notes = "";
-        public string Note
+        public string Notes
         {
             get { return _notes; }
             set
@@ -79,35 +85,41 @@ namespace Manning.MyPhotoAlbum
                 }
             }
         }
+
         private bool _hasChanged = true;
         public bool HasChanged
         {
-        get { return _hasChanged ;}
-        set { _hasChanged = value; }
+            get { return _hasChanged; }
+            set { _hasChanged = value; }
         }
+
         public Photograph(string fileName)
         {
             _fileName = fileName;
             _bitmap = null;
             _caption = System.IO.Path.GetFileNameWithoutExtension(fileName);
         }
+
         public override bool Equals(object obj)
         {
             if (obj is Photograph)
             {
                 Photograph p = (Photograph)obj;
-                return string.Equals(Filename, p.Filename, StringComparison.InvariantCultureIgnoreCase);
+                return string.Equals(FileName, p.FileName, StringComparison.InvariantCultureIgnoreCase);
             }
             return false;
         }
+
         public override int GetHashCode()
         {
-            return Filename.ToLowerInvariant().GetHashCode();
+            return FileName.ToLowerInvariant().GetHashCode();
         }
+
         public override string ToString()
         {
-            return Filename;
+            return FileName;
         }
+
         public void ReleaseImage()
         {
             if (_bitmap != null)
@@ -116,9 +128,39 @@ namespace Manning.MyPhotoAlbum
                 _bitmap = null;
             }
         }
+
         public void Dispose()
         {
             ReleaseImage();
+        }
+
+        public string ToString(string format, IFormatProvider formatProvider)
+        {
+            if (string.IsNullOrEmpty(format))
+                format = "f";
+            char first = format.ToLower()[0];
+            if (format.Length == 1)
+            {
+                switch (first)
+                {
+                    case 'c': return Caption;
+                    case 'd': return DateTaken.ToShortDateString();
+                    case 'f': return FileName;
+
+                }
+            }
+            else if (first == 'd')
+                return DateTaken.ToString(format.Substring(1), formatProvider );
+
+            throw new NotImplementedException();
+        }
+        public string ToString(string format)
+        {
+            return ToString(format, null);
+        }
+        public string ToString(IFormatProvider fp)
+        {
+            return ToString(null, fp);
         }
     }
 }
