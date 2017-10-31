@@ -80,11 +80,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\photo-tool-manleviet-master\photo-tool-manleviet-master\MyPhotos\MyPhotoAlbum\MyPhotoAlbum.csproj">
+    <ProjectReference Include="..\..\MyPhotos\MyPhotoAlbum\MyPhotoAlbum.csproj">
       <Project>{ba28f54e-5817-4900-a0d6-621702d8e6c9}</Project>
       <Name>MyPhotoAlbum</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\photo-tool-manleviet-master\photo-tool-manleviet-master\MyPhotos\MyPhotoControls\MyPhotoControls.csproj">
+    <ProjectReference Include="..\..\MyPhotos\MyPhotoControls\MyPhotoControls.csproj">
       <Project>{abe505ef-7036-49d3-ad12-f0c44552ffd5}</Project>
       <Name>MyPhotoControls</Name>
     </ProjectReference>

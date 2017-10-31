@@ -11,3 +11,6 @@ F:\Documents\GitHub\MyAlbumEditor\MyAlbumEditor\obj\Debug\MyAlbumEditor.csproj.G
 F:\Documents\GitHub\MyAlbumEditor\MyAlbumEditor\obj\Debug\MyAlbumEditor.exe
 F:\Documents\GitHub\MyAlbumEditor\MyAlbumEditor\obj\Debug\MyAlbumEditor.pdb
 F:\Documents\GitHub\MyAlbumEditor\MyAlbumEditor\obj\Debug\MyAlbumEditor.EditorForm.resources
+F:\Documents\GitHub\photo-tool-haixuan97\MyAlbumEditor\MyAlbumEditor\bin\Debug\MyAlbumEditor.exe.config
+F:\Documents\GitHub\photo-tool-haixuan97\MyAlbumEditor\MyAlbumEditor\obj\Debug\MyAlbumEditor.exe
+F:\Documents\GitHub\photo-tool-haixuan97\MyAlbumEditor\MyAlbumEditor\obj\Debug\MyAlbumEditor.pdb
