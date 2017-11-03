@@ -3,3 +3,9 @@ F:\Documents\photo-tool-manleviet-master\photo-tool-manleviet-master\MyPhotos\My
 F:\Documents\photo-tool-manleviet-master\photo-tool-manleviet-master\MyPhotos\MyPhotoAlbum\obj\Debug\MyPhotoAlbum.csprojResolveAssemblyReference.cache
 F:\Documents\photo-tool-manleviet-master\photo-tool-manleviet-master\MyPhotos\MyPhotoAlbum\obj\Debug\MyPhotoAlbum.dll
 F:\Documents\photo-tool-manleviet-master\photo-tool-manleviet-master\MyPhotos\MyPhotoAlbum\obj\Debug\MyPhotoAlbum.pdb
+E:\Documents\GitHub\photo-tool-haixuan97\MyPhotos\MyPhotoAlbum\bin\Debug\MyPhotoAlbum.dll
+E:\Documents\GitHub\photo-tool-haixuan97\MyPhotos\MyPhotoAlbum\bin\Debug\MyPhotoAlbum.pdb
+E:\Documents\GitHub\photo-tool-haixuan97\MyPhotos\MyPhotoAlbum\obj\Debug\MyPhotoAlbum.csprojResolveAssemblyReference.cache
+E:\Documents\GitHub\photo-tool-haixuan97\MyPhotos\MyPhotoAlbum\obj\Debug\MyPhotoAlbum.csproj.CoreCompileInputs.cache
+E:\Documents\GitHub\photo-tool-haixuan97\MyPhotos\MyPhotoAlbum\obj\Debug\MyPhotoAlbum.dll
+E:\Documents\GitHub\photo-tool-haixuan97\MyPhotos\MyPhotoAlbum\obj\Debug\MyPhotoAlbum.pdb

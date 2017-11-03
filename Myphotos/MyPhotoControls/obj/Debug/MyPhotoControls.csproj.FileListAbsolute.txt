@@ -11,3 +11,17 @@ F:\Documents\photo-tool-manleviet-master\photo-tool-manleviet-master\MyPhotos\My
 F:\Documents\photo-tool-manleviet-master\photo-tool-manleviet-master\MyPhotos\MyPhotoControls\obj\Debug\MyPhotoControls.csproj.GenerateResource.Cache
 F:\Documents\photo-tool-manleviet-master\photo-tool-manleviet-master\MyPhotos\MyPhotoControls\obj\Debug\MyPhotoControls.dll
 F:\Documents\photo-tool-manleviet-master\photo-tool-manleviet-master\MyPhotos\MyPhotoControls\obj\Debug\MyPhotoControls.pdb
+E:\Documents\GitHub\photo-tool-haixuan97\MyPhotos\MyPhotoControls\bin\Debug\MyPhotoControls.dll
+E:\Documents\GitHub\photo-tool-haixuan97\MyPhotos\MyPhotoControls\bin\Debug\MyPhotoControls.pdb
+E:\Documents\GitHub\photo-tool-haixuan97\MyPhotos\MyPhotoControls\bin\Debug\MyPhotoAlbum.dll
+E:\Documents\GitHub\photo-tool-haixuan97\MyPhotos\MyPhotoControls\bin\Debug\MyPhotoAlbum.pdb
+E:\Documents\GitHub\photo-tool-haixuan97\MyPhotos\MyPhotoControls\obj\Debug\MyPhotoControls.csprojResolveAssemblyReference.cache
+E:\Documents\GitHub\photo-tool-haixuan97\MyPhotos\MyPhotoControls\obj\Debug\Manning.MyPhotoControls.AlbumEditDialog.resources
+E:\Documents\GitHub\photo-tool-haixuan97\MyPhotos\MyPhotoControls\obj\Debug\Manning.MyPhotoControls.AlbumPasswordDialog.resources
+E:\Documents\GitHub\photo-tool-haixuan97\MyPhotos\MyPhotoControls\obj\Debug\Manning.MyPhotoControls.BaseEditDialog.resources
+E:\Documents\GitHub\photo-tool-haixuan97\MyPhotos\MyPhotoControls\obj\Debug\Manning.MyPhotoControls.PhotoEditDialog.resources
+E:\Documents\GitHub\photo-tool-haixuan97\MyPhotos\MyPhotoControls\obj\Debug\Manning.MyPhotoControls.PixelDialog.resources
+E:\Documents\GitHub\photo-tool-haixuan97\MyPhotos\MyPhotoControls\obj\Debug\MyPhotoControls.csproj.GenerateResource.Cache
+E:\Documents\GitHub\photo-tool-haixuan97\MyPhotos\MyPhotoControls\obj\Debug\MyPhotoControls.csproj.CoreCompileInputs.cache
+E:\Documents\GitHub\photo-tool-haixuan97\MyPhotos\MyPhotoControls\obj\Debug\MyPhotoControls.dll
+E:\Documents\GitHub\photo-tool-haixuan97\MyPhotos\MyPhotoControls\obj\Debug\MyPhotoControls.pdb
