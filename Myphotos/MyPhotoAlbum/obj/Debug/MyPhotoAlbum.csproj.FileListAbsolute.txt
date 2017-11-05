@@ -9,3 +9,9 @@ E:\Documents\GitHub\photo-tool-haixuan97\MyPhotos\MyPhotoAlbum\obj\Debug\MyPhoto
 E:\Documents\GitHub\photo-tool-haixuan97\MyPhotos\MyPhotoAlbum\obj\Debug\MyPhotoAlbum.csproj.CoreCompileInputs.cache
 E:\Documents\GitHub\photo-tool-haixuan97\MyPhotos\MyPhotoAlbum\obj\Debug\MyPhotoAlbum.dll
 E:\Documents\GitHub\photo-tool-haixuan97\MyPhotos\MyPhotoAlbum\obj\Debug\MyPhotoAlbum.pdb
+D:\github\photo-tool-haixuan97\MyPhotos\MyPhotoAlbum\bin\Debug\MyPhotoAlbum.dll
+D:\github\photo-tool-haixuan97\MyPhotos\MyPhotoAlbum\bin\Debug\MyPhotoAlbum.pdb
+D:\github\photo-tool-haixuan97\MyPhotos\MyPhotoAlbum\obj\Debug\MyPhotoAlbum.csprojResolveAssemblyReference.cache
+D:\github\photo-tool-haixuan97\MyPhotos\MyPhotoAlbum\obj\Debug\MyPhotoAlbum.csproj.CoreCompileInputs.cache
+D:\github\photo-tool-haixuan97\MyPhotos\MyPhotoAlbum\obj\Debug\MyPhotoAlbum.dll
+D:\github\photo-tool-haixuan97\MyPhotos\MyPhotoAlbum\obj\Debug\MyPhotoAlbum.pdb
