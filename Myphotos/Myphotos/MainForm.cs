@@ -35,11 +35,32 @@ namespace MyPhotos
             set { _dlgPixel = value; }
         }
 
+        internal ToolStrip MainToolStrip
+        {
+            get { return toolStripMain; }
+        }
+
+        public string AlbumPath
+        {
+            get { return Manager.FullName; }
+        }
+
+        public string AlbumTitle
+        {
+            get { return Manager.Album.Title; }
+        }
+
         public MainForm()
         {
             InitializeComponent();
             NewAlbum();
         }
+
+        public MainForm(string path, string pwd) : this()
+        {
+            Manager = new AlbumManager(path, pwd);
+        }
+
 
         private void NewAlbum()
         {
@@ -333,7 +354,7 @@ namespace MyPhotos
         {
             if (PixelForm == null || PixelForm.IsDisposed)
             {
-                PixelForm = new PixelDialog();
+                PixelForm = PixelDialog.GlobalInstance;
                 PixelForm.Owner = this;
             }
             PixelForm.Show();
@@ -344,8 +365,11 @@ namespace MyPhotos
 
         private void UpdatePixelDialog(int x, int y)
         {
+            if (IsMdiChild)
+                PixelForm = PixelDialog.GlobalInstance;
+
             if (PixelForm != null && PixelForm.Visible)
-            {
+            { 
                 Bitmap bmp = Manager.CurrentImage;
 
                 PixelForm.Text = (Manager.Current == null ? "Pixel Data" : Manager.Current.Caption);
@@ -471,8 +495,16 @@ namespace MyPhotos
 
             tsdImage.DropDown = mnuImage.DropDown;
 
+            if (IsMdiChild)
+            {
+                menuStrip1.Visible = false;
+                toolStripMain.Visible = false;
+                DisplayAlbum();
+            }
+
             base.OnLoad(e);
         }
+
         private void tbs_Click(object sender, EventArgs e)
         {
             // Ensure sender is a menu item
@@ -494,6 +526,7 @@ namespace MyPhotos
                 f.Hide();
             UpdatePixelButton(PixelForm.Visible);
         }
+
         private void UpdatePixelButton(bool visible)
         {
             tsbPixelData.Checked = visible;
@@ -502,12 +535,14 @@ namespace MyPhotos
             else
                 tsbPixelData.Image = (Image)tsbPixelData.Tag;
         }
+
         protected override void OnActivated(EventArgs e)
         {
             if (_dlgPixel != null)
                 UpdatePixelButton(_dlgPixel.Visible);
             base.OnActivated(e);
         }
+
         private void AssignSelectDropDown()
         {
             ToolStripDropDown drop = new ToolStripDropDown();
@@ -536,6 +571,13 @@ namespace MyPhotos
                 tssSelect.DropDown = drop;
                 tssSelect.DefaultItem = drop.Items[0];
             }
+        }
+
+        protected override void OnEnter(EventArgs e)
+        {
+            if (IsMdiChild)
+                UpdatePixelButton(PixelDialog.GlobalInstance.Visible);
+            base.OnEnter(e);
         }
     }
 }

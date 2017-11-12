@@ -101,6 +101,7 @@ namespace MyAlbumExplorer
             }
             base.OnAfterLabelEdit(e);
         }
+
         protected override void OnKeyDown(KeyEventArgs e)
         {
             if (e.KeyCode == Keys.F2)
@@ -110,13 +111,15 @@ namespace MyAlbumExplorer
                 e.Handled = true;
             }
         }
+
         public void RefreshNode()
         {
             IRefreshableNode refresh = SelectedNode as IRefreshableNode;
             if (refresh != null)
                 refresh.RefreshNode();
         }
-        private void SaveAlbumChanges()
+
+        public void SaveAlbumChanges()
         {
 
             AlbumNode aNode = SelectedNode as AlbumNode;
@@ -161,6 +164,7 @@ namespace MyAlbumExplorer
             }
             return null;
         }
+
         internal PhotoNode FindPhotoNode(Photograph photo)
         {
             AlbumNode albumNode = SelectedNode as AlbumNode;
