@@ -70,3 +70,4 @@ C:\Users\USER\source\repos\photo-tool-haixuan97\MyPhotos\MyPhotos\obj\Debug\MyPh
 C:\Users\USER\source\repos\photo-tool-haixuan97\MyPhotos\MyPhotos\obj\Debug\MyPhotos.csproj.CoreCompileInputs.cache
 C:\Users\USER\source\repos\photo-tool-haixuan97\MyPhotos\MyPhotos\obj\Debug\MyPhotos.exe
 C:\Users\USER\source\repos\photo-tool-haixuan97\MyPhotos\MyPhotos\obj\Debug\MyPhotos.pdb
+C:\Users\USER\Source\Repos\photo-tool-haixuan97\MyPhotos\MyPhotos\obj\Debug\MyPhotos.AboutBox.resources
